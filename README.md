@@ -1,5 +1,3 @@
-# Prediction based Video Anomaly Detection
-
 # Online Anomaly Detection in Surveillance Videos with Asymptotic Bounds on False Alarm Rate
 
 Implementation in Jupyter, Python 3.6, tensorflow. 
