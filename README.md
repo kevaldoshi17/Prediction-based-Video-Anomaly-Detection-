@@ -3,7 +3,8 @@
 Implementation in Jupyter, Python 3.6, tensorflow. 
 
 
-## 0. All the files along with the checkpoints can be downloaded from http://doi.org/10.5281/zenodo.3676032. Any changes to the order of files in the directory might raise errors so please follow the uploaded file structure. To get the final results, you can directly run MONAD.ipynb. To train models from scratch, following are the instructions to run the code. 
+## 0. Pre-installation
+All the files along with the checkpoints can be downloaded from http://doi.org/10.5281/zenodo.3676032. Any changes to the order of files in the directory might raise errors so please follow the uploaded file structure. To get the final results, you can directly run MONAD.ipynb. To train models from scratch, following are the instructions to run the code. 
 
 ## 1. Installation (Anaconda with python3.6 installation is recommended)
 * Install 3rd-package dependencies of python (listed in requirements.txt)
@@ -25,24 +26,24 @@ Please follow the instructions provided at https://pjreddie.com/darknet/yolo/
 
 ## 3. Get Nominal Mean Square Error 
 
-* Running the sript (as ped2 for examples) and cd into **Codes** folder at first.
+* Running the script (as ped2 for examples) and cd into **Codes** folder at first.
 ```shell
 python inference.py  --dataset  ped2    \
                     --test_folder  ../Data/ped2/training/frames      \
                     --gpu  1    \
                     --snapshot_dir    checkpoints/pretrains/ped2
-
+```
 The executed results are saved in ped2_train.
 
 ## 4. Get Testing Mean Square Error
 
-* Running the sript (as ped2 for examples) and cd into **Codes** folder at first.
+* Running the script (as ped2 for examples) and cd into **Codes** folder at first.
 ```shell
 python inference.py  --dataset  ped2    \
                     --test_folder  ../Data/ped2/testing/frames      \
                     --gpu  1    \
                     --snapshot_dir    checkpoints/pretrains/ped2
-
+```
 The executed results are saved in ped2_test.    
 
 ## 5. Training from scratch (here we use ped2 and avenue datasets for examples)
